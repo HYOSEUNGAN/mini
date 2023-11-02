@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 
-const app = express();
+export const app = express();
 
 app.use(express.static("build")); //build파일 보안 오픈
 

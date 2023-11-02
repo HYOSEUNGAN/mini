@@ -1,0 +1,74 @@
+.header {
+  // background-color: #333;
+  color: white;
+  padding: 1rem;
+  // text-align: center;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.padding_1rm {
+  padding: 1rem;
+}
+
+.login_btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+
+  display: inline-block;
+  width: auto;
+
+  border: none;
+  border-radius: 4px;
+  /* 트랜지션을 추가하여 부드러운 상태 변환 효과를 줍니다. */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 호버 상태에 대한 스타일 */
+.login_btn:hover {
+  background-color: #0056b3; /* 호버 시 배경색 변경 */
+  color: #ffffff; /* 호버 시 글자색 변경 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+.login_btn:active {
+  background-color: #0056b3; /* 호버 시 배경색 변경 */
+  color: #ffffff; /* 호버 시 글자색 변경 */
+  cursor: pointer; /* 마우스 커서를 손가락 모양으로 변경 */
+}
+
+.a__custome {
+  padding: 10px;
+  color: #0275d8; /* 링크의 기본 색상 */
+  text-decoration: none; /* 밑줄 없애기 */
+  transition: color 0.3s ease; /* 색상 변경시 부드러운 전환 효과 */
+  /* 마우스 오버 시 */
+  a:hover {
+    text-decoration: none; /* 밑줄 없애기 */
+    color: #0056b3; /* 호버 색상 */
+    text-decoration: underline; /* 밑줄 추가 */
+  }
+
+  /* 방문한 링크 */
+  a:visited {
+    color: #6f42c1; /* 방문한 링크의 색상 */
+    text-decoration: none; /* 밑줄 없애기 */
+  }
+
+  /* 활성 링크 (클릭 중일 때) */
+  a:active {
+    color: #df691a; /* 활성 링크의 색상 */
+    text-decoration: underline; /* 밑줄 추가 */
+  }
+}

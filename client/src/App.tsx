@@ -1,10 +1,13 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Router from "./Router/Router";
+
 function App() {
   return (
     <div className="App">
-      김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈
-      똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈
-      똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈
-      똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보김선빈 똥바보
+      <Header />
+      <Router />
+      <Footer />
     </div>
   );
 }

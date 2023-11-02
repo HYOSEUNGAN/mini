@@ -1,0 +1,55 @@
+$blue: rgb(63, 149, 241);
+$red: rgb(245, 71, 19);
+$black: rgb(46, 44, 44);
+html,
+body {
+  height: 100%; /* 전체 높이 */
+  margin: 0; /* 바깥 여백 제거 */
+  padding: 0; /* 안쪽 여백 제거 */
+  box-sizing: border-box; /* 박스 모델 설정 */
+}
+
+/* 모든 요소에 대해 box-sizing을 border-box로 설정합니다. */
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* 상위 요소로부터 box-sizing을 상속 */
+}
+
+@mixin button-color($color) {
+  background: $color;
+  &:hover {
+    background: lighten($color, 10%);
+  }
+  &:active {
+    background: darken($color, 10%);
+  }
+  &.outline {
+    color: $color;
+    background: none;
+    border: 1px solid $color;
+    &:hover {
+      background: $color;
+      color: white;
+    }
+  }
+}
+.Button {
+  display: inline-flex;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+
+  height: 2.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+
+  &.large {
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+}
